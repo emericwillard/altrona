@@ -1,0 +1,132 @@
+*{
+	font-family: Futura;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#body{
+	display: grid;
+	grid-template-rows: 6% 88% 6%;
+	grid-template-columns: 1fr 5fr;
+	grid-template-areas:  
+		"header header"
+		"sidebar body"
+		"footer footer";
+}
+nav {
+	z-index: 2;
+	grid-area: header;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+ }
+a{
+ 	text-decoration: none;
+ }
+
+#title{
+ 	margin-left: 100px;
+ }
+
+#sign{
+	display: flex;
+	margin-right: 100px;
+	width: 240px;
+	height: 25px;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+ #sign a {
+ 	padding: 4px 12px;
+ 	margin-left: 10px;
+ 	border-radius: 4px;
+ }
+
+ .signup{
+ 	color: white;
+ 	background-color: rgba(255,20,147,0.9);
+ }
+
+ .signup:hover{
+ 	color: rgba(255,20,147,0.9);
+ 	border: 1px solid rgba(255,20,147,0.9);
+ 	background-color: white;
+ }
+
+.signin{
+ 	color: rgba(255,20,147,0.9);
+ }
+
+#sidebar{
+	z-index: 1;
+	display: flex;
+	grid-area: sidebar;
+	background-color: rgb(220, 220, 220);
+	height: 700px;
+	align-items: center;
+	flex-direction: column;
+}
+#main-content{
+	grid-area: body;
+	display: grid;
+	grid-template-rows: 50% 50%; 
+	grid-template-columns: 50% 50%;
+	align-items: center;
+}
+
+.wiki, .shop, .forum, .A-propos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 93%;
+	height: 318px;
+	border-radius: 20px; 
+	justify-self: center;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.link{
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.wiki{
+	background: linear-gradient(0.85turn,rgba(255, 0, 40, 0.9), rgba(180, 0, 40, 0.9));
+}
+
+.shop{
+	background: linear-gradient(0.65turn,rgba(0, 10, 150, 0.9), rgba(50, 10, 200, 0.9));
+}
+
+.forum{
+	background: linear-gradient(1.15turn,rgba(10, 160, 50, 0.9), rgba(10, 230, 50, 0.9));
+}
+
+.A-propos{
+	background: linear-gradient(0.35turn,rgba(220, 200, 40, 0.9), rgba(200, 160, 80, 1.0));
+}
+
+.wiki:hover, .shop:hover, .forum:hover,.A-propos:hover{
+	box-shadow: 0 10px 35px rgba(0,0,0,.8);
+}
+
+#footer{
+	grid-area: footer;
+	text-align: center;
+	background: linear-gradient(gray, white);
+}
+
