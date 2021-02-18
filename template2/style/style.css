@@ -64,14 +64,15 @@ body{
 	background-color: rgb(80, 80, 80);
 	justify-content: center;
 	align-items: center;
+	grid-gap: 100px;
 }
 
-.item{
+.itemA, .itemB, .itemC, .itemD{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(90, 90, 90);
-	height: 200px;
+	height: 250px;
 	width: 400px;
 	justify-self: center;
 	box-shadow: 0 20px 40px rgba(10,10,10,.8);
@@ -79,8 +80,27 @@ body{
 	cursor: pointer;
 	border-radius: 10px;
 }
+.itemA{
+	justify-self: end;
+	align-self: end;
+}
 
-.item:hover{
+.itemB{
+	justify-self: start;
+	align-self: end;
+}
+
+.itemC{
+	justify-self: end;
+	align-self: start;
+}
+
+.itemD{
+	justify-self: start;
+	align-self: start;
+}
+
+.itemA:hover, .itemB:hover, .itemC:hover, .itemD:hover{
 	box-shadow:
 	    inset 0 0 60px whitesmoke,
 	    inset 20px 0 80px #f0f,
@@ -98,7 +118,7 @@ body{
 	position: absolute;
 	display: none;
 	transition: 0.8s;
-	transform: translateY(-20px);
+	transform: translateY(-30px);
 	width: 100%;
 	height: 250px;
 	text-align: center;
@@ -109,7 +129,7 @@ body{
 }
 
 
-.item:hover .under{
+.itemA:hover .under, .itemB:hover .under, .itemC:hover .under, .itemD:hover .under{
 	display: flex;
 	flex-wrap: wrap; 
 	justify-content: center;
