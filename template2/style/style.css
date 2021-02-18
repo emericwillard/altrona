@@ -71,7 +71,6 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgb(90, 90, 90);
 	height: 250px;
 	width: 400px;
 	justify-self: center;
@@ -83,21 +82,25 @@ body{
 .itemA{
 	justify-self: end;
 	align-self: end;
+	background: linear-gradient(0.35turn, rgb(40, 40, 40), rgb(70, 70, 70));
 }
 
 .itemB{
 	justify-self: start;
 	align-self: end;
+	background: linear-gradient(0.65turn, rgb(40, 40, 40), rgb(70, 70, 70));
 }
 
 .itemC{
 	justify-self: end;
 	align-self: start;
+	background: linear-gradient(0.15turn, rgb(40, 40, 40), rgb(70, 70, 70));
 }
 
 .itemD{
 	justify-self: start;
 	align-self: start;
+	background: linear-gradient(0.85turn, rgb(40, 40, 40), rgb(70, 70, 70));
 }
 
 .itemA:hover, .itemB:hover, .itemC:hover, .itemD:hover{
@@ -141,6 +144,6 @@ body{
 
 a{
 	text-decoration: none;
-	color: rgb(40, 40, 40);
+	color: rgb(130, 130, 130);
 }
 
