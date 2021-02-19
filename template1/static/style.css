@@ -13,9 +13,9 @@ body{
 
 #body{
 	display: grid;
-	grid-template-rows: 5% 75% 20%;
+	grid-template-rows: 5% 80% 15%;
 	grid-template-columns: 20% 80%;
-	min-height: 115vh;
+	min-height: 120vh;
 	justify-content: center;
 	align-content: center;
 }
@@ -83,22 +83,19 @@ a{
 	grid-template-columns: 50% 50%;
 	grid-column-start: 2;
 	grid-row-start: 2; 
-	height: 695px;
 	grid-gap: 15px;
 }
 
 .wiki, .shop, .forum, .A-propos{
 	display: flex;
 	align-items: center;
-	width: 93%;
-	height: 310px;
+	width: 90%;
+	height: 41vh;
 	border-radius: 20px; 
 	justify-self: center;
 	transition: 0.2s;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	text-align: center;
 }
 
 .link, .info{
