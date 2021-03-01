@@ -78,22 +78,25 @@ a{
  	right: 165px;
  	background-color: rgb(240, 240, 240);
  	height: auto;
- }
+}
 
- input[type="email"], input[type="password"], input[type="submit"]{
+.connect-form{
  	width: 237px;
- 	outline: none;
- 	margin: 10px;
- 	padding: 10px;
- 	border: none;
- }
+}
 
- input[type="submit"]{
+.connect-form-sb{
  	background-color: rgb(50, 50, 50);
  	color: white;
- 	border-radius: 2px;
  	cursor: pointer;
- 	width: 256px;
+ 	width: 257px;
+ }
+
+ .connect-form, .connect-form-sb{
+	border: none;
+ 	margin: 10px;
+ 	padding: 10px;
+ 	outline: none;
+ 	border-radius: 2px;
  }
 
 .id-form{
