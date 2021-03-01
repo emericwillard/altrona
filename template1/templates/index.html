@@ -13,8 +13,15 @@
     <nav id="nav">
         <div id="title"><h1><a href="index.html">Altrona</a></h1></div>
         <div id="sign">
-            <a href="#" class="signin">Se connecter</a>
             <a href="inscription.html" class="signup">S'inscrire</a>
+            <a href="#" class="signin" onclick="connexionContent()">Se connecter</a>
+            <div id="connexion">
+                <form action="#" method="post">
+                    <input type="email" name="id" placeholder="Adresse e-mail"/>
+                    <input type='password' name="pw" placeholder="mot de passe"/>
+                    <input type="submit" value="Se connecter" name="sb"/>
+                </form>
+            </div>
         </div>
     </nav>
     <div id="sidebar">
@@ -74,5 +81,15 @@
     </footer>
 </div>
 </body>
-<script type="text/javascript" src="../js/script.js"></script>
+<script>
+    function connexionContent(){
+        let result = document.getElementById("connexion");
+        if(result.style.display != 'flex'){
+            result.style.display = 'flex';
+
+        } else {
+            result.style.display = 'none';
+        }
+    }
+</script>
 </html>
