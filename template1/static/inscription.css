@@ -1,0 +1,73 @@
+html{
+	overflow-x: hidden;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Futura;
+}
+
+#body2{
+	display: grid;
+	grid-template-rows: 5% 80% 15%;
+	grid-template-columns: 100%;
+	min-height: 120vh;
+	justify-content: center;
+	align-content: center;
+	background-color: rgb(240, 240, 240)
+}
+
+#main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	grid-row: 2;
+	width: 100%;
+	padding-top: 100px;
+}
+
+#form-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 30px;
+	width: 100%;
+}
+
+.input-form{
+	height: 5vh;
+	width: 30%;
+	border-radius: 10px;
+	border: 1px solid rgba(0,130,220,0.9);
+	padding-left: 10px;
+}
+
+.submit-form{
+	width: 9%;
+	height: 5vh;
+	border-radius: 10px;
+	border: 1px solid rgb(10, 210, 50);
+	cursor: pointer;
+	color: rgba(10, 210, 50, 0.85);
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.submit-form:hover{
+	background-color: rgba(10, 210, 50, 0.75);
+	border-color: rgba(10, 210, 50, 0.75);
+	color: white;
+}
+
+input[type='email'], input[type="password"], input[type="submit"], input[type="text"]{
+	outline: none;
+}
+
+#connect-title{
+	color: rgba(255,20,147,0.9);
+	font-size: 22px;
+	transform: translateY(-40px);
+}

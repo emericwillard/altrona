@@ -14,10 +14,11 @@ body{
 #body{
 	display: grid;
 	grid-template-rows: 5% 80% 15%;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 15% 85%;
 	min-height: 120vh;
 	justify-content: center;
 	align-content: center;
+	background-color: rgb(240, 240, 240)
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
  }
 a{
  	text-decoration: none;
+ 	color: rgb(0, 0, 50);
  }
 
 #title{
@@ -68,14 +70,38 @@ a{
  	color: rgba(255,20,147,0.9);
  }
 
+.id-form{
+	grid-row: 1;
+}
+
 #sidebar{
 	z-index: 1;
 	display: flex;
-	background-color: rgb(220, 220, 220);
+	background-color: white;
+	border-right: 1px solid rgb(150, 150 ,150);
 	align-items: center;
 	flex-direction: column;
 	grid-column-start: 1; 
+	justify-content: start;
 }
+
+#sidebar p{
+	margin-top: 6.5vh;
+}
+
+#social-links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	min-height: 28vh;
+}
+
+.copyright{
+	font-size: 10px;
+	color: rgba(185, 185, 185, 1);
+}
+
 #main-content{
 	z-index: 1;
 	display: grid;
@@ -161,6 +187,28 @@ a{
 	background-color: rgb(40, 40, 70);
 }
 
-#footer p{
+#footer-content{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+h3{
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.f-content{
+	display: flex;
+	flex-direction: column; 
+}
+
+.foot-link, address{
+	text-decoration: none;
+	color: rgba(200, 200, 200, 0.9);
+	font-size: 13px;
+}
+
+.f-content h2{
 	color: white;
 }
