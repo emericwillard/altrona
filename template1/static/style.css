@@ -139,6 +139,7 @@ a{
 	grid-column-start: 2;
 	grid-row-start: 2; 
 	grid-gap: 15px;
+	background-image: url(../templates/img/background.jpg);
 }
 
 .wiki, .shop, .forum, .A-propos{
@@ -180,25 +181,25 @@ a{
 }
 
 .wiki{
-	background: linear-gradient(0.85turn,rgba(255, 0, 40, 0.85), rgba(180, 0, 40, 0.85));
+	background: linear-gradient(0.85turn,rgba(255, 0, 40, 0.95), rgba(180, 0, 40, 0.95));
 	justify-self: end;
 	align-self: end;
 }
 
 .shop{
-	background: linear-gradient(0.65turn,rgba(0, 10, 150, 0.9), rgba(50, 10, 200, 0.85));
+	background: linear-gradient(0.65turn,rgba(0, 10, 150, 0.95), rgba(50, 10, 200, 0.95));
 	justify-self: start;
 	align-self: end;
 }
 
 .forum{
-	background: linear-gradient(1.15turn,rgba(10, 160, 50, 0.85), rgba(10, 230, 50, 0.85));
+	background: linear-gradient(1.15turn,rgba(10, 160, 50, 0.95), rgba(10, 230, 50, 0.95));
 	justify-self: end;
 	align-self: start;
 }
 
 .A-propos{
-	background: linear-gradient(0.35turn,rgba(220, 200, 40, 0.85), rgba(200, 160, 80, 0.85));
+	background: linear-gradient(0.35turn,rgba(220, 200, 40, 0.95), rgba(200, 160, 80, 0.95));
 	justify-self: start;
 	align-self: start;
 }
